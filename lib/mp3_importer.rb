@@ -18,7 +18,7 @@ class MP3Importer
         song_name = array[0]
         artist_name = array[1]
         suffix = array[2]
-      Song.new
+      Song.new_by_filename(song_name)
     end
   end
 
