@@ -19,6 +19,7 @@ class MP3Importer
         artist_name = array[1]
         suffix = array[2]
       song_name = Song.new
+    end
   end
 
 end
