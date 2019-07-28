@@ -12,8 +12,13 @@ class MP3Importer
     end
   end
 
-  def import(list_of_filenames)
-    list_of_filenames.each{ |filename| Song.new_by_filename(filename) }
+  def import
+    Dir.children(@path).each do |filename|
+      array = filename.split(" - ")
+        song_name = array[0]
+        artist_name = array[1]
+        suffix = array[2]
+      song_name = Song.new
   end
-  
+
 end
