@@ -7,7 +7,9 @@ class MP3Importer
   end
 
   def files
-    @path
+    Dir.glob(@path).each do |filename|
+      return filename
+    end
   end
 
 end
